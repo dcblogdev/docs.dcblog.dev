@@ -1,0 +1,1 @@
+<?php `cd ../ && git pull`;
