@@ -42,10 +42,13 @@
 
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-    <!-- <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul> -->
+      <ul class="pull-right nav navbar-nav">
+          <li><a href="https://daveismyname.blog/categories/microsoft-graph-api">Graph Posts & Examples</a></li>
+          <li><a href="https://daveismyname.blog">daveismyname.blog</a></li>
+          <li><a href="https://github.com/daveismyname/">GitHub</a></li>
+          <li><a href="https://twitter.com/daveismynamecom/">Twitter</a></li>
+          <li><a href="https://www.facebook.com/davidcarrblog/">Facebook</a></li>
+      </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
 
