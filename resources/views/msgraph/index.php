@@ -1,5 +1,6 @@
 <h2>Microsoft Graph API</h2>
 <p><b>A Laravel package for working with Microsoft Graph API.</b></p>
+<p><a href="https://github.com/daveismyname/laravel-microsoft-graph">https://github.com/daveismyname/laravel-microsoft-graph</a></p>
 
 <p>MsGraph comes in two flavours:</p>
 
