@@ -73,6 +73,7 @@
         @include('msgraph/msgraph/index')
         @include('msgraph/msgraphadmin/index')
         @include('msgraph/msgraphadmin/contacts')
+        @include('msgraph/msgraphadmin/emails')
 
       </div>
       </div><!--/row-->
