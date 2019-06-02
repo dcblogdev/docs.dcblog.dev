@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('laravel-microsoft-graph', function () {
     return view('msgraph');
 });
+
+Route::get('laravel-dropbox', function () {
+    return view('dropbox');
+});

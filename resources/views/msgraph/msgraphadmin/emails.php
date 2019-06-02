@@ -198,7 +198,7 @@ MsGraphAdmin::emails()
 </code></pre>
 
 <h4>Delete Email</h4>
-<p>To delete a email call <b>->delete($id)</b> followed by the id of the email.</p>
+<p>To delete an email call <b>->delete($id)</b> followed by the id of the email.</p>
 <pre><code class="language-php">
 MsGraphAdmin::emails()->userid($userId)->delete($id)
 </code></pre>

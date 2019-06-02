@@ -66,9 +66,11 @@
 
             <h2>Laravel Packages</h2>
 
+            <h3><a href="/laravel-dropbox">Laravel Dropbox</a></h3>
+            <p>Laravel package for V2 Dropbox API</p>
+
             <h3><a href="/laravel-microsoft-graph">Laravel Microsoft Graph</a></h3>
             <p>Laravel package for Microsoft Graph API (Office365)</p>
-
 
         </div>
     </div><!--/row-->
