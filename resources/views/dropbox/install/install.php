@@ -61,7 +61,7 @@ DROPBOX_SECRET_ID=
 DROPBOX_OAUTH_URL=https://domain.com/dropbox/oauth
 </code></pre>
 
-<h3>By pass Oauth2</h3>
+<h3>Bypass Oauth2</h3>
 <p>You can bypass the oauth2 process by generating an access token in your dropbox app and entering it on youer .env file:</p>
 <pre><code class="language-php">
 DROPBOX_ACCESS_TOKEN=
