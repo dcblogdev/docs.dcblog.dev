@@ -2,6 +2,10 @@
 
 <p><b>Note this package expects a user to be logged in.</b></p>
 
+<p>Note: these examples assume the authentication is using the oauth2 and not setting the access toekn in the .env directly.</p>
+
+<p>If setting the access code directly don't rely on Dropbox::getAccessToken()</p>
+
 <p>A routes example:</p>
 <pre><code class="language-php">
 Route::group(['middleware' => ['web', 'auth']], function(){
