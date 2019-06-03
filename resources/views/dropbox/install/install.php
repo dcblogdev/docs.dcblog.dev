@@ -35,6 +35,11 @@ return [
     */
     'redirectUri' => env('DROPBOX_OAUTH_URL'),
 
+    /*
+    * Set the url to redirecto once authenticated;
+    */
+    'landingUri' => env('DROPBOX_LANDING_URL', '/'),
+
     /**
      * Set access token, when set will bypass the oauth2 process
      */
@@ -59,6 +64,7 @@ php artisan migrate
 DROPBOX_CLIENT_ID=
 DROPBOX_SECRET_ID=
 DROPBOX_OAUTH_URL=https://domain.com/dropbox/oauth
+DROPBOX_LANDING_URL=https://domain.com/dropbox
 </code></pre>
 
 <h3>Bypass Oauth2</h3>
