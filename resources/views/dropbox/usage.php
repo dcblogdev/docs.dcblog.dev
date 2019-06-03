@@ -54,7 +54,7 @@ Dropbox::delete($endpoint, $array = [], $headers = [], $useToken = true)
 <p>These expect the API endpoints to be passed, the url https://api.dropboxapi.com/2/ is provided, only endpoints after this should be used ie:</p>
 
 <pre><code class="language-php">
-MsGraph::get('users/get_current_account')
+Dropbox::get('users/get_current_account')
 </code></pre>
 
 <h3>Middleware</h3>
