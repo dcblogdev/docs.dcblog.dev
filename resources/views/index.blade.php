@@ -4,8 +4,8 @@
 
 @section('meta')
 @php
-$title = 'Laravel Packages Docs - '.config('app.name');
-$description = 'Documentation for my Laravel packages';
+$title = 'Packages Docs - '.config('app.name');
+$description = 'Documentation for my packages';
 @endphp
 <meta itemprop="name" content="{{ $title }}">
 <meta itemprop="description" content="{{ $description }}">
@@ -31,13 +31,15 @@ $description = 'Documentation for my Laravel packages';
     <div class="theme-bg-shapes-right"></div>
     <div class="theme-bg-shapes-left"></div>
     <div class="container">
-        <h1 class="page-heading single-col-max mx-auto">Laravel Packages Documentation</h1>
+        <h1 class="page-heading single-col-max mx-auto">Packages Documentation</h1>
     </div>
 </div>
 
 <div class="page-content">
     <div class="container">
         <div class="docs-overview py-5">
+
+            <h2 class="text-center">Laravel Packages</h2>
 
             <div class="row justify-content-center">
 

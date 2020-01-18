@@ -22,7 +22,7 @@
 	<div class="branding">
 		<div class="container-fluid position-relative">
 			<nav class="navbar navbar-expand-lg" >
-				<div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon mr-2" src="assets/images/site-logo.svg" alt="logo"><span class="logo-text">Laravel<span class="text-alt">Packages Docs</span></span></a></div>    
+				<div class="site-logo"><a class="navbar-brand" href="/"><img class="logo-icon mr-2" src="assets/images/site-logo.svg" alt="logo"><span class="logo-text">Packages<span class="text-alt">Docs</span></span></a></div>    
 
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
 					<span> </span>
