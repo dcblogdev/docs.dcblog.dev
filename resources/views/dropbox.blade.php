@@ -1,117 +1,97 @@
-<!doctype html>
-<html lang="en"><head>
-    <meta charset="utf-8">
-    <meta name='description' content="Documentation for Laravel package for Microsoft Graph API (Office365)">
-    <meta property='og:description' content="Documentation for Laravel package for Microsoft Graph API (Office365)">
-    <meta property='og:title' content='Laravel Microsoft Graph Docs'>
-    <meta property='og:type' content='article'>
-    <meta property='og:url' content='https://docs.daveismyname.blog/laravel-microsoft-graph'>
-    <title>Laravel Dropbox Docs</title>
-    <!-- Mobile viewport optimized -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <!-- Mobile Internet Explorer allows us to activate ClearType technology for smoothing fonts for easy reading -->
-    <meta http-equiv="cleartype" content="on">
+@extends('layouts.app')
 
-    <!-- Le styles -->
-    <link href="{{ url('devdocs/css/bootswatch/Cosmo/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/themes/black-tie/jquery-ui.css" rel="stylesheet">
-    <link href="{{ url('devdocs/css/jquery.tocify.css') }}" rel="stylesheet">
-    <link href="{{ url('devdocs/css/styles.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="https://daveismyname.blog/default/assets/css/prism.css" media="screen" />
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+@section('title', 'Packages Docs')
 
-    <!-- Le fav and touch icons -->
-    <link href="{{ url('devdocs/assets/ico/favicon.ico') }}" rel="shortcut icon">
-    <link href="{{ url('devdocs/assets/ico/apple-touch-icon-144-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="144x144">
-    <link href="{{ url('devdocs/assets/ico/apple-touch-icon-114-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="114x114">
-    <link href="{{ url('devdocs/assets/ico/apple-touch-icon-72-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="72x72">
-    <link href="{{ url('devdocs/assets/ico/apple-touch-icon-57-precomposed.png') }}" rel="apple-touch-icon-precomposed">
-  </head>
+@section('meta')
+@php
+$title = 'Laravel Packages Docs - '.config('app.name');
+$description = 'Documentation for my Laravel packages';
+@endphp
+<meta itemprop="name" content="{{ $title }}">
+<meta itemprop="description" content="{{ $description }}">
 
-  <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom:120px;">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Laravel Dropbox docs</a>
-  </div>
+<meta name='description' content='{{ $description }}'>
+<meta property='og:description' content='{{ $description }}'>
+<meta property='og:title' content='{{ $title }}'>
+<meta property='og:type' content='article'>
+<meta property='og:url' content='{{ url()->current() }}'>
+<meta property="og:site_name" content="Dave is my name" />
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="pull-right nav navbar-nav">
-          <li><a href="https://docs.daveismyname.blog/">Docs List</a></li>
-{{--          <li><a href="https://daveismyname.blog/categories/laravel-dropbox-api">Dropbox Posts & Examples</a></li>--}}
-          <li><a href="https://daveismyname.blog">daveismyname.blog</a></li>
-          <li><a href="https://github.com/daveismyname/">GitHub</a></li>
-          <li><a href="https://twitter.com/daveismynamecom/">Twitter</a></li>
-          <li><a href="https://www.facebook.com/davidcarrblog/">Facebook</a></li>
-      </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@daveismynamecom">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:creator" content="@daveismynamecom">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/github.min.css"
+@stop
 
+@section('content')
 
-    <div class="container-fluid" style="margin-top:50px;">
-      <div class="row">
-        <div class="tocify col-sm-3 col-md-3">
-          <div id="toc">
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="col-sm-9 col-md-9">
+<div class="docs-wrapper">
+	    <div id="docs-sidebar" class="docs-sidebar">
+		    <div class="top-search-box d-lg-none p-3">
+                <form class="search-form">
+		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+		        </form>
+            </div>
+		    <nav id="docs-nav" class="docs-nav navbar">
+			    <ul class="section-items list-unstyled nav flex-column pb-3">
+				    <li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Application Register</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Install</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Usage</a></li>
+				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Working with Files</a></li>
+				    
+			    </ul>
 
-        @include('dropbox/index')
-        @include('dropbox/install/app')
-        @include('dropbox/install/install')
-        @include('dropbox/usage')
-        @include('dropbox/resources/files')
+		    </nav><!--//docs-nav-->
+	    </div><!--//docs-sidebar-->
+	    <div class="docs-content">
+		    <div class="container">
+			    <article class="docs-article" id="section-1">
+				    <header class="docs-header">
+					    
 
-      </div>
-      </div><!--/row-->
+            @include('dropbox/index')
+            @include('dropbox/install/app')
+            @include('dropbox/install/install')
+            @include('dropbox/usage')
+            @include('dropbox/resources/files')
+						 
+						
+			    </article><!--//docs-article-->
 
-    </div><!--/.fluid-container-->
+			    <footer class="footer">
+				    <div class="container text-center py-5">
+				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
+				        <ul class="social-list list-unstyled pt-4 mb-0">
+						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+				        </ul><!--//social-list-->
+				    </div>
+			    </footer>
+		    </div> 
+	    </div>
+    </div><!--//docs-wrapper-->
+    
+   
+       
+    <!-- Javascript -->          
+    <script src="/assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="/assets/plugins/popper.min.js"></script>
+    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    
+    <!-- Page Specific JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script src="/assets/js/highlight-custom.js"></script> 
+    <script src="/assets/plugins/jquery.scrollTo.min.js"></script>
+    <script src="/assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script> 
+    <script src="/assets/js/docs.js"></script>
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://daveismyname.blog/default/assets/js/prism.js"></script>
-    <script src="{{ url('devdocs/js/jquery.min.js') }}"></script>
-    <script src="{{ url('devdocs/js/jquery-ui.min.js') }}"></script>
-    <script src="{{ url('devdocs/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url('devdocs/js/jquery.tocify.min.js') }}"></script>
-
-    <script>
-        $(function() {
-
-          $("#toc").tocify({ selectors: "h2, h3, h4", scrollTo: 60, highlightOffset: 60, extendPage: true });
-
-          $(".optionName").popover({ trigger: "hover", container: "body" });
-
-          $("a[href='#']").click(function(event) {
-
-              event.preventDefault();
-
-          });
-
-        });
-    </script>
-</div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127420614-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-127420614-4');
-    </script>
-
-</body>
-</html>
+@stop

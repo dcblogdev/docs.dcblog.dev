@@ -1,4 +1,5 @@
-<h2>Usage</h2>
+<section class="docs-section" id="item-1-3">
+    <h2 class="section-heading">Usage</h2>
 
 <p><b>Note this package expects a user to be logged in.</b></p>
 
@@ -70,3 +71,5 @@ Route::group(['middleware' => ['web', 'DropboxAuthenticated'], function()
 <pre><code class="language-php">
 use Daveismyname\Dropbox\Models\DropboxToken;
 </code></pre>
+
+</section>

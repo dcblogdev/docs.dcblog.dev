@@ -1,4 +1,5 @@
-<h2>Working with Files</h2>
+<section class="docs-section" id="item-1-4">
+    <h2 class="section-heading">Working with Files</h2>
 
 <p>This package provides a clean way of working with files.</p>
 <p>To work with files first call <b>->files()</b> followed by a method.</p>
@@ -52,3 +53,5 @@ Dropbox::files()->download($path)
 
 <br>
 <br>
+
+</section>

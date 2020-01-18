@@ -1,5 +1,6 @@
-<h2>Install</h2>
-
+<section class="docs-section" id="item-1-2">
+    <h2 class="section-heading">Install</h2>
+    
 <h3>Via Composer</h3>
 
 <pre><code class="language-php">composer require daveismyname/laravel-dropbox</code></pre>
@@ -72,5 +73,7 @@ DROPBOX_LANDING_URL=https://domain.com/dropbox
 <pre><code class="language-php">
 DROPBOX_ACCESS_TOKEN=
 </code></pre>
+
+</section>
 
 

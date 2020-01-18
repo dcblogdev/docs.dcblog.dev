@@ -1,4 +1,5 @@
-<h2>Usage for MsGraphAdmin</h2>
+<section class="docs-section" id="item-1-4">
+    <h2 class="section-heading">Usage for MsGraphAdmin</h2>
 
 <p><b>Only administrators can login as tenants.</b></p>
 
@@ -64,3 +65,5 @@ Route::group(['middleware' => ['web', 'MsGraphAdminAuthenticated'], function()
 <pre><code class="language-php">
 use Daveismyname\MsGraph\Models\MsGraphToken;
 </code></pre>
+
+</section>

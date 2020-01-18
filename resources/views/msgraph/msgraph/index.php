@@ -1,4 +1,5 @@
-<h2>Usage for MsGraph</h2>
+<section class="docs-section" id="item-1-3">
+    <h2 class="section-heading">Usage for MsGraph</h2>
 
 <p><b>Note this package expects a user to be logged in.</b></p>
 
@@ -66,4 +67,4 @@ Route::group(['middleware' => ['web', 'MsGraphAuthenticated'], function()
 use Daveismyname\MsGraph\Models\MsGraphToken;
 </code></pre>
 
-
+</section>

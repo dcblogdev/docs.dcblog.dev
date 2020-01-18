@@ -1,4 +1,6 @@
-<h2>Install</h2>
+<section class="docs-section" id="item-1-2">
+    <h2 class="section-heading">Install</h2>
+  
 
 <h3>Via Composer</h3>
 
@@ -116,3 +118,5 @@ MSGRAPH_TENANT_TOKEN=https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/t
 <pre><code class="language-php">
 MSGRAPH_PREFER_TIMEZONE='outlook.timezone="Europe/London"'
 </code></pre>
+
+</section>
