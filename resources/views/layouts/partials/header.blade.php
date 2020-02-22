@@ -32,8 +32,8 @@
 				
 				<div class="collapse navbar-collapse" id="navigation">
 					<ul class="social-list list-inline mt-3 mt-lg-0 mb-lg-0 d-flex ml-lg-5 mr-lg-5">
-						<li class="list-inline-item"><a href="https://github.com/sponsors/daveismyname" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
-						<li class="list-inline-item"><a href="https://twitter.com/daveismynamecom" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/sponsors/dcblogdev" target="_blank"><i class="fab fa-github fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://twitter.com/dcblogdev" target="_blank"><i class="fab fa-twitter fa-fw"></i></a></li>
 						<li class="list-inline-item"><a href="https://www.facebook.com/davidcarrblog" target="_blank"><i class="fab fa-facebook fa-fw"></i></a></li>
 					</ul><!--//social-list-->
 					<ul class="navbar-nav ml-lg-auto">
@@ -51,13 +51,13 @@
 							</div>
 						</li>
 						<li class="nav-item mr-lg-4">
-							<a class="nav-link" href="https://daveismyname.blog" target="_blank">Blog</a>
+							<a class="nav-link" href="https://dcblog.dev" target="_blank">Blog</a>
 						</li>
 						<li class="nav-item mr-lg-4">
-							<a class="nav-link" href="https://github.com/sponsors/daveismyname" target="_blank">GitHub</a>
+							<a class="nav-link" href="https://github.com/sponsors/dcblogdev" target="_blank">GitHub</a>
 						</li>
 						<li class="nav-item mr-lg-0">
-							<a class="nav-link" href="https://daveismyname.blog/contact" target="_blank">Contact</a>
+							<a class="nav-link" href="https://dcblog.dev/contact" target="_blank">Contact</a>
 						</li>
 					</ul>
 				</div>
