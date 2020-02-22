@@ -63,7 +63,7 @@ Route::group(['middleware' => ['web', 'MsGraphAdminAuthenticated'], function()
 
 <p>To access token model reference this ORM model:</p>
 <pre><code class="language-php">
-use Daveismyname\MsGraph\Models\MsGraphToken;
+use Dcblogdev\MsGraph\Models\MsGraphToken;
 </code></pre>
 
 </section>
