@@ -3,19 +3,19 @@
     
 <h3>Via Composer</h3>
 
-<pre><code class="language-php">composer require daveismyname/laravel-dropbox</code></pre>
+<pre><code class="language-php">composer require dcblogdev/laravel-dropbox</code></pre>
 
 <p>In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider in config/app.php file</p>
 <pre><code class="language-php">
 'providers' => [
     // ...
-    Daveismyname\Dropbox\DropboxServiceProvider::class,
+    Dcblogdev\Dropbox\DropboxServiceProvider::class,
 ];
 </code></pre>
 
 <h3>Config</h3>
 <p>You can publish the config file with:</p>
-<pre><code class="language-php">php artisan vendor:publish --provider="Daveismyname\Dropbox\DropboxServiceProvider" --tag="config"</code></pre>
+<pre><code class="language-php">php artisan vendor:publish --provider="Dcblogdev\Dropbox\DropboxServiceProvider" --tag="config"</code></pre>
 
 <p>When published, the config/dropbox.php config file contains:</p>
 <pre><code class="language-php">
@@ -51,7 +51,7 @@ return [
 <h3>Migration</h3>
 <p>You can publish the migration with:</p>
 <pre><code class="language-php">
-php artisan vendor:publish --provider="Daveismyname\Dropbox\DropboxServiceProvider" --tag="migrations"
+php artisan vendor:publish --provider="Dcblogdev\Dropbox\DropboxServiceProvider" --tag="migrations"
 </code></pre>
 
 <p>After the migration has been published you can create the tokens tables by running the migration:</p>

@@ -69,7 +69,7 @@ Route::group(['middleware' => ['web', 'DropboxAuthenticated'], function()
 
 <p>To access token model reference this ORM model:</p>
 <pre><code class="language-php">
-use Daveismyname\Dropbox\Models\DropboxToken;
+use Dcblogdev\Dropbox\Models\DropboxToken;
 </code></pre>
 
 </section>

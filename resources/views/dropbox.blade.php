@@ -15,13 +15,13 @@ $description = 'Documentation for my Laravel packages';
 <meta property='og:title' content='{{ $title }}'>
 <meta property='og:type' content='article'>
 <meta property='og:url' content='{{ url()->current() }}'>
-<meta property="og:site_name" content="Dave is my name" />
+<meta property="og:site_name" content="DC Blog" />
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@daveismynamecom">
+<meta name="twitter:site" content="@dcblogdev">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $description }}">
-<meta name="twitter:creator" content="@daveismynamecom">
+<meta name="twitter:creator" content="@dcblogdev">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/github.min.css"
 @stop
 

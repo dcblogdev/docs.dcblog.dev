@@ -6,7 +6,7 @@
 
 <h3>Import Namespace</h3>
 <pre><code class="language-php">
-use Daveismyname\Dropbox\Facades\Dropbox;
+use Dcblogdev\Dropbox\Facades\Dropbox;
 </code></pre>
 
 <h3>List Content</h3>
