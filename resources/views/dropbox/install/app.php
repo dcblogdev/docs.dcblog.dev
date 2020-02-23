@@ -1,6 +1,21 @@
 <section class="docs-section" id="item-1-1">
     <h2 class="section-heading">Application Register</h2>
     
-    <p>To use Box API an application needs creating at <a href="https://app.box.com/developers/console/newapp">https://app.box.com/developers/console/newapp</a></p>
-   
+    <p>To use Dropbox API an application needs creating at <a href="https://www.dropbox.com/developers/apps">https://www.dropbox.com/developers/apps</a></p>
+    <p><img src="<?=url('dropbox/app.png');?>" class="img-fluid"> </p>
+    <p>Create a new application, select either Dropbox API or Dropbox Business API</br>
+        Next select type of access needed either app folder (useful for isolating to a single folder), or full Dropbox.</p>
+
+    <p>Next copy and paste the APP Key and App Secret into your .env file:</p>
+
+    <pre><code class="language-php">
+    DROPBOX_CLIENT_ID=
+    DROPBOX_SECRET_ID=
+    </code></pre>
+
+    <p>Now enter you desired redirect url. This is the url your application will use to connect to Dropbox API.</p>
+    <p>A comman URL is https://domain.com/dropbox/oauth</p>
+
+
+
 </section>
