@@ -61,7 +61,7 @@ $description = 'Documentation for my packages';
 
             <h2 class="text-center">Laravel Packages</h2>
 
-            <div class="row justify-content-center">
+            <div class="row">
 
                 <div class="col-12 col-lg-4 py-3">
                     <div class="card shadow-sm">
@@ -104,7 +104,21 @@ $description = 'Documentation for my packages';
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
-                
+
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <span class="card-title-text">Laravel Eventbrite</span>
+                            </h5>
+                            <div class="card-text">
+                                Laravel package for Eventbrite API
+                            </div>
+                            <a class="card-link-mask" href="/laravel-eventbrite"></a>
+                        </div><!--//card-body-->
+                    </div><!--//card-->
+                </div><!--//col-->
+
             </div>
             
         </div><!--//container-->

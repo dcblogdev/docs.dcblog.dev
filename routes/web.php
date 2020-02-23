@@ -15,6 +15,7 @@ Route::view('/', 'index');
 Route::view('laravel-microsoft-graph', 'msgraph');
 Route::view('laravel-dropbox', 'dropbox');
 Route::view('laravel-box', 'box');
+Route::view('laravel-eventbrite', 'eventbrite');
 Route::view('pdo-wrapper', 'pdoWrapper');
 
 
