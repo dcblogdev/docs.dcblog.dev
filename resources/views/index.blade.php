@@ -39,7 +39,7 @@ $description = 'Documentation for my packages';
     <div class="container">
         <div class="docs-overview py-5">
 
-            <h2 class="text-center">PHP Packages</h2>
+            <?php /*<h2 class="text-center">PHP Packages</h2>
 
             <div class="row justify-content-center">
 
@@ -57,7 +57,7 @@ $description = 'Documentation for my packages';
                     </div><!--//card-->
                 </div><!--//col-->
 
-            </div>
+            </div>*/ ?>
 
             <h2 class="text-center">Laravel Packages</h2>
 
