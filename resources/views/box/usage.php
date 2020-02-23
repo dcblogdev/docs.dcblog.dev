@@ -7,14 +7,13 @@ A routes example:
 Route::get('box', function() {
 
     //if no box token exists then redirect
-    if (!is_string(Box::getAccessToken())) {
-        return redirect('box/oauth');
-    } else {
-        //box authenticated now box:: can be used freely.
+    Box::getAccessToken(); 
+    
+    //box authenticated now box:: can be used freely.
 
-        //example of getting the authenticated users details
-        return Box::get('/users/me');
-    }
+    //example of getting the authenticated users details
+    return Box::get('/users/me');
+    
 });
 
 Route::get('box/oauth', function() {
@@ -52,6 +51,5 @@ Box::put('path', $array);
 Box::patch('path', $array);
 Box::delete('path', $array);
 </code></pre>
-
 
 </section>

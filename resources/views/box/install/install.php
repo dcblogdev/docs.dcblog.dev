@@ -5,14 +5,6 @@
 
 <pre><code class="language-php">composer require dcblogdev/laravel-box</code></pre>
 
-<p>In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider in config/app.php file</p>
-<pre><code class="language-php">
-'providers' => [
-    // ...
-    Dcblogdev\Box\BoxServiceProvider::class,
-];
-</code></pre>
-
 <h3>Config</h3>
 <p>You can publish the config file with:</p>
 <pre><code class="language-php">php artisan vendor:publish --provider="Dcblogdev\Box\BoxServiceProvider" --tag="config"</code></pre>
@@ -52,8 +44,8 @@ The `BOX_REDIRECT_URI` is where Box should redirect to for authentication with B
 <pre><code class="language-php">
 BOX_CLIENT_ID=
 BOX_SECRET_ID=
-BOX_REDIRECT_URI=https://domain.com/dropbox/oauth
-BOX_LANDING_URI=https://domain.com/dropbox
+BOX_REDIRECT_URI=https://domain.com/box/oauth
+BOX_LANDING_URI=https://domain.com/box
 </code></pre>
 
 </section>
