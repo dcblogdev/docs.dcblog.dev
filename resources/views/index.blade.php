@@ -61,6 +61,20 @@ $description = 'Documentation for my packages';
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title mb-3">
+                                <span class="card-title-text">Laravel Box</span>
+                            </h5>
+                            <div class="card-text">
+                                Laravel package for Box API
+                            </div>
+                            <a class="card-link-mask" href="/laravel-box"></a>
+                        </div><!--//card-body-->
+                    </div><!--//card-->
+                </div><!--//col-->
+
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
                                 <span class="card-title-text">Laravel Microsoft Graph</span>
                             </h5>
                             <div class="card-text">

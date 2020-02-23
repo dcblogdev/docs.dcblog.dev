@@ -11,14 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('laravel-microsoft-graph', function () {
-    return view('msgraph');
-});
-
-Route::get('laravel-dropbox', function () {
-    return view('dropbox');
-});
+Route::view('index');
+Route::view('msgraph');
+Route::view('dropbox');
+Route::view('box');
