@@ -52,17 +52,15 @@ $description = 'Documentation for Laravel package for Microsoft Graph API (Offic
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
 
-            @include('msgraph/index')
-            @include('msgraph/install/app')
-            @include('msgraph/install/install')
-            @include('msgraph/msgraph/index')
-            @include('msgraph/msgraphadmin/index')
-            @include('msgraph/msgraphadmin/contacts')
-            @include('msgraph/msgraphadmin/emails')
-						
+                    @include('msgraph/index')
+                    @include('msgraph/install/app')
+                    @include('msgraph/install/install')
+                    @include('msgraph/msgraph/index')
+                    @include('msgraph/msgraphadmin/index')
+                    @include('msgraph/msgraphadmin/contacts')
+                    @include('msgraph/msgraphadmin/emails')
+        						
 			    </article><!--//docs-article-->
-
-
 		    </div> 
 	    </div>
     </div><!--//docs-wrapper-->
