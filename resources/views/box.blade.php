@@ -52,11 +52,11 @@ $description = 'Documentation for my Laravel packages';
 			    <article class="docs-article" id="section-1">
 				    <header class="docs-header">
 
-                    @include('dropbox/index')
-                    @include('dropbox/install/app')
-                    @include('dropbox/install/install')
-                    @include('dropbox/usage')
-                    @include('dropbox/resources/files')
+                    @include('box/index')
+                    @include('box/install/app')
+                    @include('box/install/install')
+                    @include('box/usage')
+                    @include('box/resources/files')
 						
 			    </article><!--//docs-article-->
 
