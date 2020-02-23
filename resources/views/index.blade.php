@@ -67,20 +67,6 @@ $description = 'Documentation for my packages';
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title mb-3">
-                                <span class="card-title-text">Laravel Dropbox</span>
-                            </h5>
-                            <div class="card-text">
-                                Laravel package for V2 Dropbox API
-                            </div>
-                            <a class="card-link-mask" href="/laravel-dropbox"></a>
-                        </div><!--//card-body-->
-                    </div><!--//card-->
-                </div><!--//col-->
-
-                <div class="col-12 col-lg-4 py-3">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <h5 class="card-title mb-3">
                                 <span class="card-title-text">Laravel Box</span>
                             </h5>
                             <div class="card-text">
@@ -95,12 +81,12 @@ $description = 'Documentation for my packages';
                     <div class="card shadow-sm">
                         <div class="card-body">
                             <h5 class="card-title mb-3">
-                                <span class="card-title-text">Laravel Microsoft Graph</span>
+                                <span class="card-title-text">Laravel Dropbox</span>
                             </h5>
                             <div class="card-text">
-                                Laravel package for Microsoft Graph API (Office365)
+                                Laravel package for V2 Dropbox API
                             </div>
-                            <a class="card-link-mask" href="/laravel-microsoft-graph"></a>
+                            <a class="card-link-mask" href="/laravel-dropbox"></a>
                         </div><!--//card-body-->
                     </div><!--//card-->
                 </div><!--//col-->
@@ -119,6 +105,20 @@ $description = 'Documentation for my packages';
                     </div><!--//card-->
                 </div><!--//col-->
 
+                <div class="col-12 col-lg-4 py-3">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <span class="card-title-text">Laravel Microsoft Graph</span>
+                            </h5>
+                            <div class="card-text">
+                                Laravel package for Microsoft Graph API (Office365)
+                            </div>
+                            <a class="card-link-mask" href="/laravel-microsoft-graph"></a>
+                        </div><!--//card-body-->
+                    </div><!--//card-->
+                </div><!--//col-->
+                
             </div>
             
         </div><!--//container-->
