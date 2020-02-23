@@ -1,6 +1,11 @@
 <section class="docs-section" id="item-1-3">
     <h2 class="section-heading">Usage</h2>
 
+<h3>Import Namespace</h3>
+<pre><code class="language-php">
+use Dcblogdev\Box\Facades\Box;
+</code></pre>
+
 A routes example:
 
 <pre><code class="language-php">

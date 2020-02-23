@@ -6,14 +6,6 @@
 
 <pre><code class="language-php">composer require dcblogdev/laravel-msgraph</code></pre>
 
-<p>In Laravel 5.5 the service provider will automatically get registered. In older versions of the framework just add the service provider in config/app.php file</p>
-<pre><code class="language-php">
-'providers' => [
-    // ...
-    Dcblogdev\MsGraph\MsGraphServiceProvider::class,
-];
-</code></pre>
-
 <h3>Config</h3>
 <p>You can publish the config file with:</p>
 <pre><code class="language-php">php artisan vendor:publish --provider="Dcblogdev\MsGraph\MsGraphServiceProvider" --tag="config"</code></pre>

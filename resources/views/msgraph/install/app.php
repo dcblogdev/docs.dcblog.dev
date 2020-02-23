@@ -1,22 +1,34 @@
 <section class="docs-section" id="item-1-1">
     <h2 class="section-heading">Application Register</h2>
   
-    <p>To use Microsoft Graph API an application needs creating at <a href="https://apps.dev.microsoft.com">https://apps.dev.microsoft.com</a></p>
-    <p><img src="<?=url('msgraph/createapp.png');?>" class="img-fluid"> </p>
-    <p>Create a new application, name the application. Click continue the Application Id will then be displayed.</p>
-    <p><img src="<?=url('msgraph/appid.png');?>" class="img-fluid"> </p>
-    <p>Next click Generate New Password under Application Secrets it won't be shown again so ensure you've copied it and added to .env more details further down.</p>
+    <p>To use Microsoft Graph API an application needs creating.</p>
+    <p>Sign in to the <a href="https://portal.azure.com/">https://portal.azure.com/</a> using either a work or school account or a personal Microsoft account.</p>
+    <p>If your account gives you access to more than one tenant, select your account in the top right corner, and set your portal session to the Azure AD tenant that you want.</p>
+    <p>In the left-hand navigation pane, select the Azure Active Directory service, and then select App registrations > New registration.</p>
+
+    <p>When the Register an application page appears, enter your application's registration information:</p>
+    <p>Name - Enter a meaningful application name that will be displayed to users of the app.</p>
+    <p>Supported account types - Select which accounts you would like your application to support.</p>
+    <p>Enter you desired redirect url. This is the url your application will use to connect to Graph API.</p>
+
+    <p><img src="<?=url('msgraph/registerapp.png');?>" class="img-fluid"> </p>
+    <p>Next click Register on the next page take a note of the Application (client) ID.</p>
+
+    <p>Add the following to your .env file, change the domain to match your own.</p>
 
     <pre><code class="language-php">
     MSGRAPH_CLIENT_ID=
     MSGRAPH_SECRET_ID=
+    MSGRAPH_OAUTH_URL=http://domain.com/msgraph/oauth
+    MSGRAPH_LANDING_URL=http://domain.com/msgraph
     </code></pre>
 
-    <p>Now click Add Platform under Platforms and select web.</p>
-    <p>Enter you desired redirect url. This is the url your application will use to connect to Graph API.</p>
-    <p><img src="<?=url('msgraph/web-platform.png');?>" class="img-fluid"> </p>
-    <p>Now under Microsoft Graph Permissions click add and select which permissions to use, a maximum of 20 can be selected.</p>
-    <p><img src="<?=url('msgraph/permissions.png');?>" class="img-fluid"> </p>
-    <p>The other options are optional, click save at the bottom of the page to save your changes.</p>
+    <p>Add the client id to the .env file.</p>
 
+    <p>Next click Certificate & Secrets and click new client secret</p>
+    <p>Enter a description and expiration option. Copy secret to .env</p>
+
+    <p>Now go to API Permissions. click add a permissions.</p>
+    <p>First select the group type followed by the permision. For instance when working with emails select the exchange group.</p>
+    
 </section>

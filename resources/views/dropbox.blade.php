@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Packages Docs')
+@section('title', 'Laravel Dropbox')
 
 @section('meta')
 @php
-$title = 'Laravel Packages Docs - '.config('app.name');
-$description = 'Documentation for my Laravel packages';
+$title = 'Laravel Box - '.config('app.name');
+$description = 'Documentation for DC Blog Laravel Dropbox package';
 @endphp
 <meta itemprop="name" content="{{ $title }}">
 <meta itemprop="description" content="{{ $description }}">

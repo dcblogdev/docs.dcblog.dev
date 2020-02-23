@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Packages Docs')
+@section('title', 'Laravel Microsoft Graph')
 
 @section('meta')
 @php
-$title = 'Laravel Microsoft Graph Docs - '.config('app.name');
-$description = 'Documentation for Laravel package for Microsoft Graph API (Office365)';
+$title = 'Laravel Box - '.config('app.name');
+$description = 'Documentation for DC Blog Laravel Microsoft Graph package';
 @endphp
 <meta itemprop="name" content="{{ $title }}">
 <meta itemprop="description" content="{{ $description }}">

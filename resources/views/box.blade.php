@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Packages Docs')
+@section('title', 'Laravel Box')
 
 @section('meta')
 @php
-$title = 'Laravel Packages Docs - '.config('app.name');
-$description = 'Documentation for my Laravel packages';
+$title = 'Laravel Box - '.config('app.name');
+$description = 'Documentation for DC Blog Laravel Box package';
 @endphp
 <meta itemprop="name" content="{{ $title }}">
 <meta itemprop="description" content="{{ $description }}">
@@ -42,6 +42,7 @@ $description = 'Documentation for my Laravel packages';
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Install</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-3">Usage</a></li>
 				    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-4">Working with Files</a></li>
+                    <li class="nav-item"><a class="nav-link scrollto" href="#item-1-5">Working with folders</a></li>
 				    
 			    </ul>
 
@@ -57,6 +58,7 @@ $description = 'Documentation for my Laravel packages';
                     @include('box/install/install')
                     @include('box/usage')
                     @include('box/resources/files')
+                    @include('box/resources/folders')
 						
 			    </article><!--//docs-article-->
 
