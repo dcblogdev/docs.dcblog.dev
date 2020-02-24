@@ -4,7 +4,7 @@
 
 <h3>Via Composer</h3>
 
-<pre><code class="language-php">composer require dcblogdev/laravel-msgraph</code></pre>
+<pre><code class="language-php">composer require dcblogdev/laravel-microsoft-graph</code></pre>
 
 <h3>Config</h3>
 <p>You can publish the config file with:</p>

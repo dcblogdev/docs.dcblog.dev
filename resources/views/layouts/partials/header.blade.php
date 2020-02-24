@@ -45,11 +45,12 @@
 								Packages Docs
 							</a>
 							<div class="dropdown-menu dropdown-menu-right rounded shadow menu-animate slideIn" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item has-icon" href="/laravel-box"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs fa-fw"></i></span>Laravel Box API</a>
-                                <a class="dropdown-item has-icon" href="/laravel-dropbox"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs fa-fw"></i></span>Laravel Dropbox API</a>
-                                <a class="dropdown-item has-icon" href="/laravel-eventbrite"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down fa-fw"></i></span>Laravel Eventbrite</a>
-								<a class="dropdown-item has-icon" href="/laravel-microsoft-graph"><span class="theme-icon-holder mr-2"><i class="fas fa-arrow-down fa-fw"></i></span>Laravel Microsoft Graph API</a>
-								
+                                @foreach(config('packages.php') as $pack)
+                                <a class="dropdown-item has-icon" href="{{ $pack['slug'] }}"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs fa-fw"></i></span>{{ $pack['title'] }}</a>
+                                @endforeach
+                                @foreach(config('packages.laravel') as $pack)
+								<a class="dropdown-item has-icon" href="{{ $pack['slug'] }}"><span class="theme-icon-holder mr-2"><i class="fas fa-map-signs fa-fw"></i></span>{{ $pack['title'] }}</a>
+                                @endforeach
 							</div>
 						</li>
 						<li class="nav-item mr-lg-4">
